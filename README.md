@@ -1,3 +1,3 @@
 # Mega-Project-Terraform
-#### Also check the CICD Repository for Github Actions projects
 EKS Module for Mega Capstone CICD Project with Monitoring.....
+#### Also check the CICD Repository for Github Actions projects
