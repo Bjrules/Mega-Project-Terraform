@@ -21,6 +21,7 @@ metadata:
   namespace: webapps
 rules:
   # Permissions for core API resources
+  # Note below that PersistentVolume(PV) and StorageClass were not defined below because they are Cluster level resourses. 
   - apiGroups: [""]
     resources:
       - secrets
