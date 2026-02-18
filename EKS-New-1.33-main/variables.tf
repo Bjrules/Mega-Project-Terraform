@@ -1,13 +1,13 @@
 variable "region" {
   description = "AWS region"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "cluster_name" {
   description = "EKS cluster name"
   type        = string
-  default     = "devopsshack-cluster"
+  default     = "bbanjo-cluster"
 }
 
 variable "kubernetes_version" {
@@ -62,8 +62,8 @@ variable "tags" {
   description = "Common resource tags"
   type        = map(string)
   default = {
-    Project   = "DevOpsShack"
-    ManagedBy = "Terraform"
+    Project   = "BB-WESTERN"
+    ManagedBy = "TerraformBB
   }
 }
 
