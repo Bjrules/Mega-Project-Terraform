@@ -114,6 +114,19 @@ subjects:
 ```
 
 
+### **6. Create secret**
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+  annotations:
+    kubernetes.io/service-account.name: jenkins
+type: kubernetes.io/service-account-token
+
+
+```
+
 
 ### **Explanation of Permissions**
 
@@ -162,5 +175,5 @@ subjects:
    kubectl auth can-i create persistentvolumes --as=system:serviceaccount:webapps:jenkins
    ```
 
-### Generate token using service account in the namespace
-[Create Token](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#:~:text=To%20create%20a%20non%2Dexpiring,with%20that%20generated%20token%20data.)
+### Generate token using service account in the namespace by creating secret
+[Create Token](https://kubernetes.io/docs/concepts/configuration/secret/)
