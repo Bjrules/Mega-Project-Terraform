@@ -63,7 +63,7 @@ variable "tags" {
   type        = map(string)
   default = {
     Project   = "BB-WESTERN"
-    ManagedBy = "TerraformBB
+    ManagedBy = "TerraformBB"
   }
 }
 
