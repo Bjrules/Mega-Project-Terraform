@@ -72,6 +72,7 @@ subjects:
 
 ### **4. ClusterRole**
 ```yaml
+#Here, roles for cluster level resources are created 
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
